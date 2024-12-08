@@ -1,0 +1,580 @@
+
+/*{
+    font-family: "Amatic SC", sans-serif;
+    
+    font-style: normal;
+    font-family: "Amatic SC", sans-serif;
+
+    font-family: "Open Sans", sans-serif;
+
+     font-family: "Inter", sans-serif;
+    
+    font-style: normal
+}*/
+*{
+    scroll-behavior: smooth;
+}
+body , ul ,h2 ,h3 ,p   {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 999999;
+    
+}
+
+.logo{
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+.logo div{
+    width: 5px;
+    height: 5px;
+    background-color: tomato;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+}
+.logo1{
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+.logo1 div{
+    width: 5px;
+    height: 5px;
+    background-color: tomato;
+    border-radius: 50%;
+    position: absolute;
+    right:200px;
+    bottom: 15px;
+}
+
+.text > div{
+    margin: 15px 0 0 0;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.navbar i{
+    font-size: 26px;
+    
+}
+
+
+.navbar .details ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+
+
+.navbar .details ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: rgb(120, 119, 119);
+    
+
+}
+.navbar .details ul li a:hover{
+    color: #ed4242;
+}
+.home2{
+    display: flex;
+    padding: 70px 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eeeeee;
+    margin: 50px 0;
+    
+}
+
+.home2 .dish{
+    width: 33%;
+    
+}
+
+
+@keyframes dish{
+    from{
+        position: relative;
+
+    }
+
+    20%{
+       
+        position: relative;
+        top: 5px;
+        
+       }
+       40%{
+        position: relative;
+        
+        
+        left: 5px;
+        
+
+       }
+       60%{
+        position: relative;
+        
+        bottom: 5px;
+        
+       }
+       80%{
+        position: relative;
+        
+        right: 5px;
+       }
+       
+
+    }
+
+.home2 .dish img:hover{
+    animation: dish infinite .3s ease;
+
+}
+.home2 .dish img{
+    width: 100%;
+    
+}
+.home2 .text span{
+    font-size: 64px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+}
+
+.home2 .text button{
+    padding: 10px 20px;
+    background-color: #ce1212;
+    cursor: pointer;
+    border-radius: 100vh;
+    border-top-left-radius:0px; 
+    border: solid transparent;
+    text-decoration: none;
+    color: #eeeeee;
+    
+}
+.home2 .text button:hover{
+    background-color: #ed4242;
+}
+.home2 .text button a{
+
+    text-decoration: none;
+    color: #eeeeee;
+    width: 20px;
+    height: 20px;
+
+
+}
+.home2 .text a{
+    text-decoration: none;
+    color: #010000;
+    font-family: "Open Sans", sans-serif;
+}
+
+.home2 .text i{
+    border: solid 4px rgb(149, 15, 15);
+    
+    border-radius: 100%;
+    font-size: 14px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+.page2{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+ .head{
+    text-align: center;
+    font-size: 34px;
+    padding: 40px 0;
+    width: 50%;
+}
+
+ .head >span{
+    color: grey;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+
+}
+ .head h2{
+    font-family: "Amatic SC", sans-serif;
+    
+}
+.head h2 span{
+    color: red;
+    
+
+}
+.cards{
+    
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 30%;
+    overflow: hidden;
+    text-align: center;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .5s ease;
+    position: relative;
+    
+}
+
+.cards .card div{
+    
+    border-radius: 5px;
+    height: 180px;
+    width: 35px;
+    background-color:rgba(255, 255, 255, 0.3);
+    position: absolute;
+    right: -40px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    transition:  .2s .2s ease;
+    
+    
+}
+.card:hover  div{
+
+    position:absolute;
+    right: 10px;
+    top: 20px;
+}
+.card:hover{
+    transform: scale(1.07);
+}
+.card span{
+    font-family: "Inter", sans-serif;
+    font-weight:lighter;
+    padding: 10px 0;
+}
+
+.card h2{
+    padding: 10px 0;
+    font-family: "Open Sans", sans-serif;
+}
+.card p{
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    padding: 10px 0;
+}
+.card img{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+
+}
+.page3{
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    margin: 20px 0;
+    padding: 40px 0;
+    flex-direction: column;
+}
+
+
+
+.page3 .meals{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.page3 .meals .meal1{
+
+    width: 30%;
+    font-family: "Open Sans", sans-serif;
+
+}
+.page3 .meals .meal1 div , .page3 .meals .meal2 div ,.page3 .meals .meal3 div{
+    margin:10px 0;
+}
+.page3 .meals .meal1 img{
+
+    width: 100%;
+    
+    border: solid white 5px;
+
+}
+.page3 .meals .meal2{
+
+    width: 30%;
+    font-family: "Open Sans", sans-serif;
+    
+    
+    
+}
+
+ 
+
+
+.page3 .meals .meal2 img{
+
+    width: 100%;
+    
+    
+    border: solid white 5px;
+
+
+}
+.page3 .meals .meal3{
+    width: 30%;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+.page3 .meals .meal3 img{
+
+    width: 100%;
+    
+    
+    border: solid white 5px;
+
+
+}
+
+
+
+.page4{
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.page4 .contact{
+
+    display: flex;
+}
+.map{
+    width: 90%;
+}
+.map iframe{
+    border-radius: 10px;
+}
+
+.dettails{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    padding: 1.5625rem;
+    background-color: hsl( 0, 0%, calc(100% - 4%) );
+    font-family: "Open Sans", sans-serif;
+} 
+
+.page4 .dettails .icon{
+    min-width: 3.125rem;
+    min-height: 3.125rem;
+    background-color: #ce1212;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+.dataa{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding:40px 0;
+    
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    width: 85%;
+    column-gap: 10px;
+    align-items: center;
+    
+    
+    
+    
+}
+.form .user{
+    width: 49.5%;
+    padding: 15px 100px 15px 5px;
+    font-family: "Open Sans", sans-serif;
+    
+
+}
+.form .subject{
+    width: 100%;
+    padding: 15px 110px 15px 5px;
+    font-family: "Open Sans", sans-serif;
+}
+.form textarea{
+    width: 100%;
+    resize: none;
+    font-family: "Open Sans", sans-serif;
+}
+.form button{
+    padding: 10px 20px;
+    background-color: tomato;
+    cursor: pointer;
+    border-radius: 100vh;
+    font-family: "Open Sans", sans-serif;
+    border: solid transparent;
+    text-decoration: none;
+    color: #eeeeee;
+
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: #eeeeee;
+    padding: 40px 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer .sec1{
+    width: 20%;
+    
+
+}
+.footer .social{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}.footer h2{
+    padding: 0 0 10 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.footer .icoons{
+
+    font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.sec2 .daataa input{
+    width: 80%;
+    height: 40px;
+}
+
+
+.sec2 .daataa button{
+    background-color: #ce1212;
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.sec2{
+    width: 50%;
+}
+.lisst{
+    display: flex;
+    column-gap: 80px;
+}
+  
+
+.sec3{
+    width: 20%;
+}
+.sec3 > div{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 30px;
+    
+}
+
+.sec3 i{
+    color: #ce1212;
+}
+
+.sec3 div .loc , .sec3 div .phone , .sec3 div .mail{
+    display: flex;
+    column-gap: 5px;
+    font-size: 20px;
+}
+
+.im1{
+    
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 100%;
+    color: white;
+    top:100%;
+    left: 0px;
+    transition: top 1s ease;
+    padding-top: 30%;
+    
+    
+    
+}
+.im1:hover .overlay{
+    top: 0px;
+}
+
+
+
